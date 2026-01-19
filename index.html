@@ -1,182 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Saurabh Orma | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saurabh Verma</title>
 
   <style>
-    :root {
-      --bg: #0b0f1a;
-      --card: rgba(255,255,255,0.08);
-      --border: rgba(255,255,255,0.15);
-      --text: #eaeaf0;
-      --muted: #a5a8b6;
-      --accent: #4fd1c5;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: "Inter", system-ui, sans-serif;
-      background: radial-gradient(circle at top, #121833, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-
-    /* ---------- Layout ---------- */
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    header {
-      display: grid;
-      gap: 20px;
-      margin-bottom: 80px;
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 70px 28px;
     }
 
     h1 {
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      font-weight: 800;
-      letter-spacing: -1px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 0.2em;
+      letter-spacing: -0.5px;
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+      font-size: 1.4rem;
+      margin-top: 3.5rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
     }
 
-    p { color: var(--muted); }
-
-    /* ---------- Glass Card ---------- */
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px;
-      backdrop-filter: blur(14px);
-      transform-style: preserve-3d;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
     }
 
-    .card:hover {
-      transform: translateY(-10px) rotateX(4deg);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    p {
+      font-size: 1rem;
+      margin: 0.6rem 0;
+      color: #222;
     }
 
-    /* ---------- Sections ---------- */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+    .muted {
+      color: #555;
     }
 
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(79,209,197,0.15);
-      color: var(--accent);
-      font-size: 0.85rem;
-      margin: 4px 6px 0 0;
+    .topline {
+      margin-bottom: 2.5rem;
+    }
+
+    .links a {
+      margin-right: 16px;
+      color: #0050c8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 0.6rem;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    .work {
+      margin-top: 1.4rem;
+    }
+
+    .work-block {
+      margin-bottom: 1.6rem;
     }
 
     footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--muted);
+      margin-top: 5rem;
       font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 
 <body>
+  <div class="page">
 
-  <div class="container">
-
-    <!-- HERO -->
-    <header>
-      <span class="tag">Student • Innovator • Research-oriented</span>
-      <h1>Saurabh Orma</h1>
-      <p>
-        Class 12 science student working at the intersection of
-        <strong>biology, AI, and social-impact engineering</strong>.
-        Focused on building real systems that solve structural problems in India.
+    <!-- HEADER -->
+    <div class="topline">
+      <h1>Saurabh Verma</h1>
+      <p class="muted">
+        Science student interested in biology, artificial intelligence,
+        and large-scale public systems.
       </p>
-    </header>
-
-    <!-- ABOUT -->
-    <section style="margin-bottom:80px;">
-      <h2>About Me</h2>
-      <div class="card">
-        <p>
-          I come from a rural background in Uttar Pradesh and actively work on
-          projects that combine technology with public-scale impact.
-          My interests span <strong>medicine, neuroscience, AI, embedded systems</strong>,
-          and policy-relevant innovation.
-        </p>
+      <div class="links">
+        <a href="https://github.com/Svlmp347-star" target="_blank">GitHub</a>
+        <a href="https://svlmp347-star.github.io" target="_blank">Website</a>
       </div>
-    </section>
+    </div>
 
-    <!-- PROJECTS -->
-    <section style="margin-bottom:80px;">
-      <h2>Flagship Project</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Smart Grain ATM</h3>
-          <p>
-            An IoT-enabled automated grain distribution system designed to
-            improve transparency and accuracy in public food distribution.
-          </p>
-          <div style="margin-top:15px;">
-            <span class="tag">ESP32</span>
-            <span class="tag">RFID</span>
-            <span class="tag">Load Cell</span>
-            <span class="tag">Firebase</span>
-          </div>
-          <p style="margin-top:18px;">
-            <a href="https://github.com/Svlmp347-star/smart-grain-atm" target="_blank">
-              View GitHub →
-            </a>
-          </p>
-        </div>
-      </div>
+    <!-- STATEMENT -->
+    <section>
+      <p>
+        I am a science student from rural India working at the intersection of
+        <strong>biological systems, artificial intelligence, and
+        technology-driven public infrastructure</strong>.
+        My interests are shaped by questions of scale:
+        how complex systems—biological or institutional—fail,
+        and how they can be redesigned using scientific and engineering principles.
+      </p>
+
+      <p>
+        I am particularly drawn to problems where theory must survive
+        real-world constraints, whether in neuroscience,
+        healthcare delivery, or embedded systems deployed at population scale.
+      </p>
     </section>
 
     <!-- INTERESTS -->
-    <section style="margin-bottom:80px;">
-      <h2>Core Interests</h2>
-      <div class="grid">
-        <div class="card">Neuroscience & Neurodegeneration</div>
-        <div class="card">AI for Healthcare</div>
-        <div class="card">Embedded & Hardware Systems</div>
-        <div class="card">Public-Scale Innovation</div>
+    <section>
+      <h2>Intellectual Interests</h2>
+      <ul>
+        <li>Neurodegeneration and systems-level neuroscience</li>
+        <li>Artificial intelligence for medical and biological data</li>
+        <li>Embedded and cyber-physical systems</li>
+        <li>Technology for public infrastructure and health systems</li>
+        <li>Translational research: from theory to deployment</li>
+      </ul>
+    </section>
+
+    <!-- WORK -->
+    <section class="work">
+      <h2>Selected Work</h2>
+
+      <div class="work-block">
+        <h3>Smart Grain ATM</h3>
+        <p class="muted">
+          RFID-authenticated, sensor-driven grain distribution system
+        </p>
+        <p>
+          Designed and implemented an automated grain dispensing system
+          intended to improve transparency and accuracy in public food
+          distribution. The system integrates embedded hardware,
+          secure authentication, precise weight sensing,
+          and cloud-based logging.
+        </p>
+        <p>
+          The core challenge was translating a socio-economic problem
+          into a reliable cyber-physical system under real-world constraints,
+          balancing cost, robustness, and accountability.
+        </p>
+        <p>
+          <a href="https://github.com/Svlmp347-star/smart-grain-atm" target="_blank">
+            Project repository →
+          </a>
+        </p>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ACADEMIC DIRECTION -->
     <section>
-      <h2>Connect</h2>
-      <div class="card">
-        <p>
-          I am open to mentorship, research collaboration, and student innovation programs.
-        </p>
-        <p style="margin-top:15px;">
-          🔗 <a href="https://github.com/Svlmp347-star" target="_blank">GitHub</a><br/>
-          🌐 <a href="https://svlmp347-star.github.io" target="_blank">Website</a>
-        </p>
-      </div>
+      <h2>Academic Direction</h2>
+      <p>
+        In the near term, I am preparing for science-focused academic pathways
+        while actively engaging in independent technical and research-oriented work.
+      </p>
+      <p>
+        Long-term, I aim to pursue research at the intersection of medicine,
+        biology, and artificial intelligence, with the goal of contributing
+        to scientifically grounded solutions for large-scale health systems.
+      </p>
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        This site is intentionally minimal.
+        It reflects ongoing work rather than finished claims.
+      </p>
+    </footer>
 
   </div>
-
-  <footer>
-    © 2026 Saurabh Orma • Built with purpose
-  </footer>
-
 </body>
 </html>
