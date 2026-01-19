@@ -1,193 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Saurabh Verma</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh Verma | Systems, Biology & Infrastructure</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      margin: 0;
-      background: #ffffff;
-      color: #111;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.65;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1220;
+      color: #e5e7eb;
     }
-
-    .page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 70px 28px;
+    .gradient-text {
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin-bottom: 0.2em;
-      letter-spacing: -0.5px;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 3.5rem;
-      margin-bottom: 0.8rem;
-      font-weight: 600;
-    }
-
-    h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-
-    p {
-      font-size: 1rem;
-      margin: 0.6rem 0;
-      color: #222;
-    }
-
-    .muted {
-      color: #555;
-    }
-
-    .topline {
-      margin-bottom: 2.5rem;
-    }
-
-    .links a {
-      margin-right: 16px;
-      color: #0050c8;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-top: 0.6rem;
-    }
-
-    li {
-      margin: 0.4rem 0;
-    }
-
-    .work {
-      margin-top: 1.4rem;
-    }
-
-    .work-block {
-      margin-bottom: 1.6rem;
-    }
-
-    footer {
-      margin-top: 5rem;
-      font-size: 0.9rem;
-      color: #666;
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
     }
   </style>
 </head>
 
-<body>
-  <div class="page">
+<body class="px-6 md:px-20 py-12">
 
-    <!-- HEADER -->
-    <div class="topline">
-      <h1>Saurabh Verma</h1>
-      <p class="muted">
-        Science student interested in biology, artificial intelligence,
-        and large-scale public systems.
+<!-- ================= HERO ================= -->
+<section class="max-w-6xl mx-auto mb-28">
+  <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+    Saurabh Verma
+  </h1>
+  <p class="text-xl text-slate-400 max-w-3xl leading-relaxed">
+    Science student working at the intersection of <strong>biological systems</strong>,
+    <strong>engineering</strong>, and <strong>public infrastructure</strong>.
+    I focus on building systems that survive real-world constraints —
+    not just ideal conditions.
+  </p>
+
+  <div class="mt-8 flex gap-6 text-sky-400">
+    <a href="https://github.com/Svlmp347-star" class="hover:underline">GitHub</a>
+    <a href="mailto:your-email@example.com" class="hover:underline">Contact</a>
+  </div>
+</section>
+
+<!-- ================= HOW I THINK ================= -->
+<section class="max-w-5xl mx-auto mb-28">
+  <h2 class="text-3xl font-semibold mb-8 border-b border-slate-700 pb-3">
+    How I Think About Problems
+  </h2>
+
+  <p class="text-slate-300 leading-relaxed mb-6">
+    I am drawn to problems that resist clean solutions — systems where technology,
+    human behavior, economics, and policy collide.
+    I deliberately choose environments with <strong>constraints</strong>,
+    because constraints reveal truth faster than abundance.
+  </p>
+
+  <p class="text-slate-300 leading-relaxed mb-6">
+    My approach is systems-first:
+    I ask where failures accumulate, how incentives distort outcomes,
+    and what happens when assumptions break.
+    Only after understanding the system do I decide what to build.
+  </p>
+
+  <p class="text-slate-300 leading-relaxed">
+    I believe robust systems should fail like biological ones —
+    <em>locally, slowly, and recoverably</em>.
+  </p>
+</section>
+
+<!-- ================= PROJECT ================= -->
+<section class="max-w-6xl mx-auto mb-32">
+  <h2 class="text-3xl font-semibold mb-10 border-b border-slate-700 pb-3 text-sky-400">
+    Featured Project — Smart Grain ATM (GranX)
+  </h2>
+
+  <div class="card rounded-xl p-8 mb-12">
+    <h3 class="text-2xl font-bold mb-4">
+      Redesigning Public Distribution as a Cyber-Physical System
+    </h3>
+
+    <p class="text-slate-300 mb-6 leading-relaxed">
+      The Smart Grain ATM is an attempt to eliminate systemic leakage
+      in India’s Public Distribution System (PDS).
+      Instead of building another monitoring app,
+      I focused on redesigning the physical interface where failure actually occurs.
+    </p>
+
+    <ul class="list-disc list-inside text-slate-300 mb-6 space-y-2">
+      <li>RFID-based authentication instead of fragile biometrics</li>
+      <li>Industrial load cells for verifiable dispensing</li>
+      <li>Edge-first logic to survive unreliable connectivity</li>
+      <li>Design assumptions based on misuse, not compliance</li>
+    </ul>
+
+    <p class="text-slate-300 leading-relaxed">
+      The goal was not automation — it was <strong>trust reconstruction</strong>
+      through engineering.
+    </p>
+
+    <div class="mt-8">
+      <a href="https://github.com/Svlmp347-star/smart-grain-atm"
+         class="inline-block bg-sky-600 hover:bg-sky-500 px-6 py-3 rounded-lg font-semibold">
+        View Code & Documentation
+      </a>
+    </div>
+  </div>
+
+  <!-- IMAGES PLACEHOLDER -->
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="card p-4 rounded-lg text-center text-slate-400">
+      <p>📸 Prototype Image Placeholder</p>
+      <p class="text-sm mt-2 italic">
+        Early hardware iteration revealing sensor drift under vibration.
       </p>
-      <div class="links">
-        <a href="https://github.com/Svlmp347-star" target="_blank">GitHub</a>
-        <a href="https://svlmp347-star.github.io" target="_blank">Website</a>
-      </div>
+    </div>
+    <div class="card p-4 rounded-lg text-center text-slate-400">
+      <p>📸 Field Testing Placeholder</p>
+      <p class="text-sm mt-2 italic">
+        Testing usability constraints in real ration-shop conditions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Q&A ================= -->
+<section class="max-w-5xl mx-auto mb-32">
+  <h2 class="text-3xl font-semibold mb-10 border-b border-slate-700 pb-3">
+    Questions I Expect — and My Honest Answers
+  </h2>
+
+  <div class="space-y-10">
+
+    <div>
+      <h3 class="font-semibold text-xl mb-2">
+        Why this problem?
+      </h3>
+      <p class="text-slate-300 leading-relaxed">
+        I chose this problem because it could not be solved with a demo.
+        It forced me to confront messy realities — unreliable power,
+        human incentives, and institutional inertia.
+      </p>
     </div>
 
-    <!-- STATEMENT -->
-    <section>
-      <p>
-        I am a science student from rural India working at the intersection of
-        <strong>biological systems, artificial intelligence, and
-        technology-driven public infrastructure</strong>.
-        My interests are shaped by questions of scale:
-        how complex systems—biological or institutional—fail,
-        and how they can be redesigned using scientific and engineering principles.
+    <div>
+      <h3 class="font-semibold text-xl mb-2">
+        You lack strong coding skills. Why MIT?
+      </h3>
+      <p class="text-slate-300 leading-relaxed">
+        Coding is a tool. My focus is deciding what deserves to be built,
+        under which constraints, and why most solutions fail.
+        I learn instruments as needed; I invest deeply in thinking.
       </p>
+    </div>
 
-      <p>
-        I am particularly drawn to problems where theory must survive
-        real-world constraints, whether in neuroscience,
-        healthcare delivery, or embedded systems deployed at population scale.
+    <div>
+      <h3 class="font-semibold text-xl mb-2">
+        What did you fail at?
+      </h3>
+      <p class="text-slate-300 leading-relaxed">
+        Early assumptions collapsed — from mechanical instability
+        to social misuse.
+        Each failure forced redesign, not feature addition.
       </p>
-    </section>
+    </div>
 
-    <!-- INTERESTS -->
-    <section>
-      <h2>Intellectual Interests</h2>
-      <ul>
-        <li>Neurodegeneration and systems-level neuroscience</li>
-        <li>Artificial intelligence for medical and biological data</li>
-        <li>Embedded and cyber-physical systems</li>
-        <li>Technology for public infrastructure and health systems</li>
-        <li>Translational research: from theory to deployment</li>
-      </ul>
-    </section>
-
-    <!-- WORK -->
-    <section class="work">
-      <h2>Selected Work</h2>
-
-      <div class="work-block">
-        <h3>Smart Grain ATM</h3>
-        <p class="muted">
-          RFID-authenticated, sensor-driven grain distribution system
-        </p>
-        <p>
-          Designed and implemented an automated grain dispensing system
-          intended to improve transparency and accuracy in public food
-          distribution. The system integrates embedded hardware,
-          secure authentication, precise weight sensing,
-          and cloud-based logging.
-        </p>
-        <p>
-          The core challenge was translating a socio-economic problem
-          into a reliable cyber-physical system under real-world constraints,
-          balancing cost, robustness, and accountability.
-        </p>
-        <p>
-          <a href="https://github.com/Svlmp347-star/smart-grain-atm" target="_blank">
-            Project repository →
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ACADEMIC DIRECTION -->
-    <section>
-      <h2>Academic Direction</h2>
-      <p>
-        In the near term, I am preparing for science-focused academic pathways
-        while actively engaging in independent technical and research-oriented work.
+    <div>
+      <h3 class="font-semibold text-xl mb-2">
+        What would you do at MIT?
+      </h3>
+      <p class="text-slate-300 leading-relaxed">
+        I would formalize intuition into models,
+        validate assumptions experimentally,
+        and collaborate with people who challenge my thinking,
+        not my background.
       </p>
-      <p>
-        Long-term, I aim to pursue research at the intersection of medicine,
-        biology, and artificial intelligence, with the goal of contributing
-        to scientifically grounded solutions for large-scale health systems.
-      </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>
-        This site is intentionally minimal.
-        It reflects ongoing work rather than finished claims.
-      </p>
-    </footer>
+    </div>
 
   </div>
+</section>
+
+<!-- ================= ROADMAP ================= -->
+<section class="max-w-5xl mx-auto mb-32">
+  <h2 class="text-3xl font-semibold mb-8 border-b border-slate-700 pb-3">
+    Near-Term Roadmap
+  </h2>
+
+  <ul class="space-y-4 text-slate-300">
+    <li>• Complete robust industrial chassis design</li>
+    <li>• Expand testing under real distribution conditions</li>
+    <li>• Apply systems thinking to healthcare and biological models</li>
+  </ul>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center text-slate-500 border-t border-slate-800 pt-10">
+  <p>
+    Built with constraints. Designed for durability.
+  </p>
+  <p class="mt-2 italic">
+    Lakhimpur Kheri, Uttar Pradesh, India
+  </p>
+</footer>
+
 </body>
 </html>
